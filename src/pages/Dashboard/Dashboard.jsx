@@ -16,15 +16,14 @@ const Dashboard = () => {
   };
   const handlePost = (e) => {
     e.preventDefault();
-    new_post(formData);
+    try {
+      new_post(formData);
+    } catch (error) {
+      window.alert(error);
+    }
   };
   useEffect(() => {
     const { data, error } = newPostData;
-
-    if (data) {
-      window.location.href = "/dashboard";
-      console.log(data);
-    }
     if (error) window.alert("sorry an error occured");
   }, [newPostData.data, newPostData.error]);
   return isAuth ? (
@@ -89,6 +88,17 @@ const Dashboard = () => {
             disabled={newPostData?.loading && true}
           />
         </form>
+        {newPostData.data && (
+          <div className="success">
+            <div className="message">{"Successfully uploaded"}</div>
+            <button
+              onClick={(e) => {
+                window.location.href = "/dashboard";
+              }}>
+              Okay
+            </button>
+          </div>
+        )}
       </div>
     </>
   ) : (

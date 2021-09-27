@@ -13,7 +13,7 @@ import {
 } from "./pages";
 import ScrollToTop from "./components/scrollTop";
 import DashboardLogin from "./pages/DashboardLogin/DashboardLogin";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import Dashboard from "./pages/Dashboard/Dashboard.jsx";
 
 function App() {
   return (

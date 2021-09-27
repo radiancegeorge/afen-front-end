@@ -15,7 +15,10 @@ const HeaderComponent = (props: any) => {
     console.log(location.pathname);
     setLink(location.pathname);
   }, [location.pathname]);
-  return (
+  return location.pathname.toLowerCase().includes("dashboardlogin") ||
+    location.pathname.toLowerCase().includes("dashboard") ? (
+    <p></p>
+  ) : (
     <>
       <header className="main_header service" id="header">
         <div className="container-fluid">

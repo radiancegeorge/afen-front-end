@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter, Link, useLocation } from "react-router-dom";
 import { ContactUs } from "..";
 import useSubscribe from "../../hooks/subscribeMails";
 import CustomImageLoader from "../customImageLoader";
@@ -78,6 +78,7 @@ import "./footer.scss";
 // export { Footer };
 
 const FooterComponent = (props: any) => {
+  const location = useLocation();
   const [show, setShow] = useState(false);
   const [subscriberData, setSubscriberData] = useState({
     email: "",
@@ -88,7 +89,10 @@ const FooterComponent = (props: any) => {
     subscriberData.email.trim() !== "" &&
       subscribe({ data: JSON.stringify(subscriberData) });
   };
-  return (
+  return location.pathname.toLowerCase().includes("dashboardlogin") ||
+    location.pathname.toLowerCase().includes("dashboard") ? (
+    <p></p>
+  ) : (
     <>
       {/* {visible && (
         <Modal_ setVisible={setVisible} text={error ? "failed" : "Success"} />
