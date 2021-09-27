@@ -1,0 +1,113 @@
+@media screen and (max-width: 767.98px) {
+  .home_banner_section .right_chart {
+    bottom: 30px;
+    right: 50px;
+    display: none;
+    border-radius: 14px;
+  }
+
+  .right_chart.open {
+    display: block;
+  }
+}
+
+.home_banner_section .right_chart {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  width: 280px;
+  background: rgba(255, 255, 255, 0.36);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 14px 0px 0px 14px;
+  backdrop-filter: blur(2px);
+  text-align: center;
+}
+
+.right_chart .chart_top {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.right_chart .chart_top img {
+  display: block;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.right_chart .chart_top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #16222e;
+  opacity: 0.8;
+}
+
+.right_chart .chart_top a img {
+  padding-bottom: 0;
+  margin: inherit;
+  margin-left: 10px;
+  width: 16px;
+}
+
+.chart_img_box {
+  background: #16222e;
+  border-radius: 5px;
+  padding: 40px 25px;
+  margin-bottom: 10px;
+}
+
+.chart_img_box .top {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.chart_img_box .price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffe260;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.chart_img_box .price span {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #a6a6a6;
+}
+
+.chart_img_box .top .cricle_rd {
+  border: 2px solid #ffe260;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+}
+
+.chart_img_box img {
+  width: 100%;
+}
+
+.chart_img_box .top p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #a6a6a6;
+  text-align: right;
+  width: 85%;
+  margin: 0;
+}
+
+.chart_img_box .top p span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #d2b12a;
+}

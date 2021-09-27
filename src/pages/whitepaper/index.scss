@@ -1,0 +1,63 @@
+.sidebardata_contant {
+  overflow: auto !important;
+}
+
+.react-pdf__Document {
+  margin-left: -72px !important;
+  margin-top: -36px !important;
+}
+
+.sidebar_deta_outer {
+  min-height: 100vh !important;
+}
+
+.sidebar_deta_outer:before {
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+table {
+  td {
+    border: 2px solid black !important;
+  }
+  th {
+    border: 2px solid black !important;
+    background-color: yellow;
+    text-align: center;
+  }
+}
+
+.parent {
+  p {
+    margin-top: 0px !important;
+  }
+}
+
+.vertical-align {
+  vertical-align: inherit !important;
+}
+
+.service-table {
+  .mt-5 {
+    margin-top: 10px !important;
+  }
+  .mb-10 {
+    margin-bottom: 30px !important;
+  }
+  ol {
+    .underline {
+      text-decoration: underline;
+    }
+    .non-underline {
+      float: left;
+    }
+  }
+}
+
+.float-left {
+  float: left !important;
+}
+
+#accordion {
+  overflow-y: auto !important;
+}

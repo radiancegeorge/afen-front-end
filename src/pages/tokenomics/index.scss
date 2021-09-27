@@ -1,0 +1,201 @@
+.tokan_top_sec .top_heading {
+  margin-bottom: 40px;
+}
+
+.tokan_top_sec .top_heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0.7;
+  line-height: 41px;
+  margin-bottom: 15px;
+}
+
+.tokan_top_sec .top_heading p {
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+.tokan_top_sec {
+  padding-bottom: 150px;
+}
+
+.tokan_top_sec .tokan_box {
+  background-color: #16222e;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  //   background-image: url(/assets/images/afen_logfo_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 265px;
+  width: 350px;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+.tokan_top_sec .tokan_box h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.tokan_top_sec .tokan_box p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a6a6a6;
+}
+
+.tokan_top_sec .tokan_box a {
+  color: #ffe260;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.tokenomics_inner {
+  text-align: center;
+}
+
+.tokenomics {
+  background-color: #0b0726;
+  padding: 80px 0;
+  position: relative;
+}
+
+.tokenomics:before {
+  content: "TOKENOMICS";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 226, 96, 0.08);
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 230px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+/* Tokenomics*/
+
+.tok_cart_sec {
+  background-color: #0b0726;
+  padding: 1px 0;
+  position: relative;
+}
+
+.tok_cart_sec:before {
+  content: "Tokenomics";
+  font-weight: bold;
+  font-size: 170px;
+  line-height: 0%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: rgba(255, 226, 96, 0.05);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  top: 50%;
+}
+
+.tok_cart_sec .mobile_img {
+  display: none;
+}
+
+.tokenomics_inner {
+  text-align: center;
+}
+
+.tokenomics {
+  background-color: #0b0726;
+  padding: 80px 0;
+  position: relative;
+}
+
+.tokenomics:before {
+  content: "TOKENOMICS";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 226, 96, 0.08);
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 230px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .tokenomics:before {
+    font-size: 140px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .tokenomics:before {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  /* Tokenomics */
+  .tok_cart_sec .mobile_img {
+    display: block;
+    text-align: center;
+  }
+
+  .dasktop_img {
+    display: none;
+  }
+
+  .tok_cart_sec:before {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 100px;
+    top: 200px;
+  }
+
+  .tok_cart_sec .mobile_img h4 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    margin-bottom: 50px;
+  }
+
+  .tok_cart_sec .mobile_img img {
+    margin-bottom: 80px;
+  }
+
+  .tok_cart_sec .mobile_img h5 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .tokan_top_sec .top_heading h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tokan_top_sec .top_heading p {
+    font-size: 12px;
+  }
+
+  .tokan_top_sec .tokan_box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* tokenomics */

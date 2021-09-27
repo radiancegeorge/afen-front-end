@@ -1,0 +1,23 @@
+.sidebardata_contant p {
+  margin-top: 2% !important;
+}
+.sidebardata_contant a {
+  margin-top: 1% !important;
+  float: left;
+}
+
+.ftrud_logo > ul > li {
+  cursor: pointer !important;
+}
+
+/* .blogs {
+  background-size: 100% 100%;
+} */
+
+.userimg img {
+  border: 0px !important;
+}
+
+.sidebar_deta_outer:before {
+  height: 100vh !important;
+}

@@ -1,0 +1,17 @@
+.footer-show {
+  display: none;
+}
+@media screen and (max-width: 1199.98px) {
+  .footer-hide {
+    display: none;
+  }
+  .footer-show {
+    display: block;
+    border-top: solid 1px transparent;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+}
