@@ -21,8 +21,7 @@ const PoweredBySection = (props: any) => {
                   redirect(
                     "https://www.coingecko.com/en/coins/afen-blockchain"
                   );
-                }}
-              >
+                }}>
                 CoinGecko
               </Link>
             </li>
@@ -33,8 +32,7 @@ const PoweredBySection = (props: any) => {
                   redirect(
                     "https://www.bitmart.com/trade/en?symbol=AFEN_USDT&layout=basic"
                   );
-                }}
-              >
+                }}>
                 Bitmart
               </Link>
             </li>
@@ -45,8 +43,7 @@ const PoweredBySection = (props: any) => {
                   redirect(
                     "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xd0840d5f67206f865aee7cce075bd4484cd3cc81"
                   );
-                }}
-              >
+                }}>
                 PancakeSwap
               </Link>
             </li>
@@ -57,9 +54,17 @@ const PoweredBySection = (props: any) => {
                   redirect(
                     "https://coinmarketcap.com/currencies/afen-blockchain/"
                   );
-                }}
-              >
+                }}>
                 CoinMarketCap
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="#"
+                onClick={() => {
+                  redirect("https://mexc.com/currencies/exchange/AFEN_USDT");
+                }}>
+                Mexc
               </Link>
             </li>
           </ul>

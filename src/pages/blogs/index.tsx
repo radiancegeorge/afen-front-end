@@ -49,7 +49,7 @@ const Blogs = (props: any) => {
           <div className="leftblocgcontent">
             <h5>{ele.date}</h5>
             <h3>{ele.title}</h3>
-            <p>{ele.description}</p>
+            <p className="description">{ele.description}</p>
             <div>
               <a href={ele.link} target="_blank">
                 Read More &gt;&gt;&gt;
@@ -67,7 +67,7 @@ const Blogs = (props: any) => {
     return (
       <div className="row mb-5 mobile_dairection">
         <div className="col-md-6">
-          <div className="leftblocgcontent text-right">
+          <div className="leftblocgcontent ">
             <h5>{ele.date}</h5>
             <h3> {ele.title}</h3>
             <p>{ele.description}</p>

@@ -1,9 +1,30 @@
 .blogs {
   background-size: cover;
   background-position: center center;
+
   .leftblocgcontent {
+    text-align: right;
     p {
       font-size: 15px;
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .blogs {
+    text-align: center !important;
+  }
+  .userimgouter,
+  .rightmode {
+    width: 90%;
+    margin: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  .leftblocgcontent {
+    text-align: center !important;
   }
 }
