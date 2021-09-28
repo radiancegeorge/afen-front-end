@@ -97,7 +97,7 @@ const Services = (props: any) => {
         <div className="item">
           <div className="service_contant">
             <div className="banner_img">
-              <img src="assets/images/sebastian.jpg" alt="sebastian" />
+              <img src="assets/images/afen_education.png" alt="Afen Education" />
             </div>
             <div className="banner_contant">
               <div className="container-fluid">
@@ -142,7 +142,7 @@ const Services = (props: any) => {
         <div className="item">
           <div className="service_contant">
             <div className="banner_img">
-              <img src="assets/images/sebastian.jpg" alt="sebastian" />
+              <img src="assets/images/real_estate.png" alt="Real Estate" />
             </div>
             <div className="banner_contant">
               <div className="container-fluid">
