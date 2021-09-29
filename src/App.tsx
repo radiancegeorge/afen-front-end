@@ -14,6 +14,7 @@ import {
 import ScrollToTop from "./components/scrollTop";
 import DashboardLogin from "./pages/DashboardLogin/DashboardLogin";
 import Dashboard from "./pages/Dashboard/Dashboard.jsx";
+import DashboardOptions from "./pages/dashboardSelect";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
           <Route exact path="/home" component={Home} />
           <Route exact path="/" component={Home} />
           <Route exact path="/dashboardLogin" component={DashboardLogin} />
-          <Route path="/dashboard" exact component={Dashboard} />
+          <Route path="/dashboard" exact component={DashboardOptions} />
         </Switch>
         <Footer />
       </ScrollToTop>
