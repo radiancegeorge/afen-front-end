@@ -35,7 +35,14 @@ const Dashboard = () => {
           <div className="photo">
             <FaCamera className="camera-icon" onClick={triggerFileInput} />
             <label htmlFor="image"></label>
-            <input type="image" src alt="" id="image" height="50" width="100" />
+            <input
+              type="image"
+              src={URL.createObjectURL(formData.cover)}
+              alt=""
+              id="image"
+              height="50"
+              width="100"
+            />
             <input
               type="file"
               onChange={(e) =>

@@ -16,6 +16,8 @@ const HeaderComponent = (props: any) => {
     setLink(location.pathname);
   }, [location.pathname]);
   return location.pathname.toLowerCase().includes("dashboardlogin") ||
+    location.pathname.toLowerCase().includes("newpost") ||
+    location.pathname.toLowerCase().includes("viewpost") ||
     location.pathname.toLowerCase().includes("dashboard") ? (
     <p></p>
   ) : (

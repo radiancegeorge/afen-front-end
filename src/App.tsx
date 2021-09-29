@@ -32,6 +32,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/dashboardLogin" component={DashboardLogin} />
           <Route path="/dashboard" exact component={DashboardOptions} />
+          <Route path="/newpost" exact component={Dashboard} />
+          <Route path="/viewpost" exact component={Dashboard} />
         </Switch>
         <Footer />
       </ScrollToTop>
