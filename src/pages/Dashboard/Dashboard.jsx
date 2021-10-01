@@ -37,7 +37,7 @@ const Dashboard = () => {
             <label htmlFor="image"></label>
             <input
               type="image"
-              src={URL.createObjectURL(formData.cover)}
+              src={formData.cover && URL.createObjectURL(formData.cover)}
               alt=""
               id="image"
               height="50"

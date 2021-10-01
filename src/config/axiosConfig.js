@@ -1,7 +1,7 @@
 import Axios from "axios";
 const token = window.sessionStorage.getItem("isAuth");
 const axios = Axios.create({
-  baseURL: "https://blogserver.afengroup.com",
+  baseURL: "http://localhost:4000" || "https://blogserver.afengroup.com",
 });
 
 axios.interceptors.request.use((config) => {
