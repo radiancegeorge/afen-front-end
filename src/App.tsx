@@ -17,6 +17,7 @@ import Dashboard from "./pages/Dashboard/Dashboard.jsx";
 import DashboardOptions from "./pages/dashboardSelect";
 import EmailBoard from "./pages/emailBoard";
 import ViewPost from "./pages/viewPost";
+import BlogDelete from "./pages/BlogDelete";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/blogs" component={Blogs} />
+          <Route exact path="/blogdelete" component={BlogDelete} />
           <Route exact path="/services" component={Services} />
           <Route exact path="/teams" component={Team} />
           <Route exact path="/our-partner" component={OurPartner} />
