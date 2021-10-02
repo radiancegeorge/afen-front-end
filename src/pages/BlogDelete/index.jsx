@@ -21,17 +21,18 @@ export default function BlogDelete() {
                         <div className="card_delete">
                             <div className="time"> 06 August, 2021 </div>
                             <h5 className="card_title">AFEN TRENDS: 5 Things you should know about the new NFT euphoria.</h5>
-                            <p className="message">
+                            {/* <p className="message">
                             Est urna id arcu et. Id fringilla quam et in ullamcorper hac eget volutpat quis. Sed sem augue eget morbi accumsan proin. Mauris morbi laoreet tortor a adipiscing. Volutpat diam ut cras amet, eu. Faucibus enim in eu at sem nec morbi. Hac suspendisse sollicitudin enim tristique imperdiet dui quam posuere. Odio in.
-                            </p>
+                            </p> */}
                         </div>
                 </div>
                 <div className="content_card">
                         <div className="card_delete">
                             <div className="time"> 06 August, 2021 </div>
                             <h5 className="card_title">DEVELOPMENT UPDATE #7 : JUNE AND GENERAL UPDATES.</h5>
-                            <p className="message">
-                            Sit vulputate maecenas neque, nisi, nisl commodo elementum etiam massa. Viverra imperdiet pretium, morbi curabitur ac. Ut dolor ut malesuada in. Aliquam aliquam et accumsan, dui, auctor facilisis nibh. Elementum lectus nisl, eu lectus ac diam in ridiculus netus. Neque, placerat eget ut pharetra. Enim fringilla faucibus.                            </p>
+                            {/* <p className="message">
+                            Sit vulputate maecenas neque, nisi, nisl commodo elementum etiam massa. Viverra imperdiet pretium, morbi curabitur ac. Ut dolor ut malesuada in. Aliquam aliquam et accumsan, dui, auctor facilisis nibh. Elementum lectus nisl, eu lectus ac diam in ridiculus netus. Neque, placerat eget ut pharetra. Enim fringilla faucibus.
+                            </p> */}
                         </div>
                         <div className="card_delete">
                             <img className='card_image' src={card_img2} alt="headimage" srcset="" sizes="(max-width: 600px) 480px, 800px" />
@@ -44,17 +45,18 @@ export default function BlogDelete() {
                         <div className="card_delete">
                             <div className="time"> 06 August, 2021 </div>
                             <h5 className="card_title">AFEN TRENDS: 5 Things you should know about the new NFT euphoria.</h5>
-                            <p className="message">
+                            {/* <p className="message">
                             Est urna id arcu et. Id fringilla quam et in ullamcorper hac eget volutpat quis. Sed sem augue eget morbi accumsan proin. Mauris morbi laoreet tortor a adipiscing. Volutpat diam ut cras amet, eu. Faucibus enim in eu at sem nec morbi. Hac suspendisse sollicitudin enim tristique imperdiet dui quam posuere. Odio in.
-                            </p>
+                            </p> */}
                         </div>
                 </div>
                 <div className="content_card">
                         <div className="card_delete">
                             <div className="time"> 06 August, 2021 </div>
                             <h5 className="card_title">AFEN TRENDS: 5 Things you should know about the new NFT euphoria.</h5>
-                            <p className="message">
-                            Lorem lacus integer fermentum donec. Imperdiet pellentesque tortor commodo vitae. Eget vitae purus est laoreet phasellus. Tristique nullam interdum amet, elementum amet posuere. Nisl viverra elit adipiscing dolor, etiam risus, elementum tortor urna. Amet, massa eleifend velit, volutpat. Nisl mi sem volutpat arcu.                            </p>
+                            {/* <p className="message">
+                            Lorem lacus integer fermentum donec. Imperdiet pellentesque tortor commodo vitae. Eget vitae purus est laoreet phasellus. Tristique nullam interdum amet, elementum amet posuere. Nisl viverra elit adipiscing dolor, etiam risus, elementum tortor urna. Amet, massa eleifend velit, volutpat. Nisl mi sem volutpat arcu.                            
+                            </p> */}
                         </div>
                         <div className="card_delete">
                             <img className='card_image' src={card_img4} alt="headimage" srcset="" sizes="(max-width: 600px) 480px, 800px" />

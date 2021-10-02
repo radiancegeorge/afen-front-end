@@ -1,13 +1,15 @@
 .delete_blog{
     background: #0B0726;
-    width: 100%;
-    // height: 80vh;
-    
-    .delete_container{
-        // margin: auto 50%;
+
         display: flex;
         justify-content: center;
         align-items: center;
+    
+    .delete_container{
+        width: 900px;
+
+        border-bottom: 1px solid #000;
+
     }
 
     .logo-holder{
@@ -30,7 +32,7 @@
         .card_delete{
             // background-color: white;
             width: 100%;
-            height: 291px;
+            // height: 291px;
             margin: auto 2%;
             // padding: 10px;
             color: #FFf;
@@ -48,7 +50,7 @@
 
     @media screen and (max-width: 375px){
         .logo-holder{
-            height: 227px;
+            height: 250px;
         }
         .content_card{
             display: block;
