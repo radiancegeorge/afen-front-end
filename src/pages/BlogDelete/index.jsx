@@ -4,8 +4,11 @@ import "./blog_delete.scss";
 import useAdminCred from "../../hooks/blogPosts";
 import moment from "moment";
 import useAxios from "axios-hooks";
+import { Redirect } from "react-router-dom";
+import useCheckAuth from "../../hooks/checkAuth";
 
 export default function BlogDelete() {
+  const { isAuth } = useCheckAuth();
   const { postsData, fetchPosts } = useAdminCred();
   const [itemToDelete, setItemToDelete] = useState();
   const [{ ...deleteData }, deletePost] = useAxios(
@@ -22,7 +25,7 @@ export default function BlogDelete() {
     deleteData.data && window.location.reload();
   }, [deleteData.data, deleteData.error]);
   console.log(postsData.data);
-  return (
+  return isAuth ? (
     <div className="delete_blog">
       <div className="delete_container">
         <div>
@@ -83,5 +86,7 @@ export default function BlogDelete() {
         </div>
       )}
     </div>
+  ) : (
+    <Redirect to="/dashboardLogin" />
   );
 }

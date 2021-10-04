@@ -56,7 +56,7 @@ const DashboardOptions = () => {
             />
           </svg>
         </NavLink>
-        <NavLink to="/viewpost" className="view__blog__post">
+        <NavLink to="/blogdelete" className="view__blog__post">
           <svg
             width="303"
             height="303"

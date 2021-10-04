@@ -91,7 +91,7 @@ const FooterComponent = (props: any) => {
   };
   return location.pathname.toLowerCase().includes("dashboardlogin") ||
     location.pathname.toLowerCase().includes("newpost") ||
-    location.pathname.toLowerCase().includes("viewpost") ||
+    location.pathname.toLowerCase().includes("blogdelete") ||
     location.pathname.toLowerCase().includes("emailboard") ||
     location.pathname.toLowerCase().includes("dashboard") ? (
     <p></p>
