@@ -11,7 +11,7 @@ const Blogs = (props: any) => {
   useEffect(() => {
     fetchPosts();
   }, []);
-  console.log(postsData.data);
+  // console.log(postsData.data);
 
   const defaultData = [
     {
