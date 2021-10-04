@@ -18,8 +18,8 @@ const Dashboard = () => {
     if (data) {
       window.sessionStorage.setItem("isAuth", data);
       setTimeout(() => {
-        history.push("/dashboard");
-      }, 1000);
+        window.location.href = "/dashboard";
+      }, 2000);
     }
     if (error) {
       setError(true);

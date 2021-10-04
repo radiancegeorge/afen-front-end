@@ -4,7 +4,10 @@ import logo from "../../img/afenblog.png";
 import "./emailBoard.scss";
 import { FaCamera } from "react-icons/fa";
 import useSendBulkMail from "../../hooks/sendMail";
+import useCheckAuth from "../../hooks/checkAuth";
+import { Redirect } from "react-router";
 const EmailBoard = () => {
+  const { isAuth } = useCheckAuth();
   const { countData, pushMail, bulkMailData } = useSendBulkMail();
   const imageSelector = useRef(null);
   const [formData, setFormData] = useState({});
@@ -27,7 +30,7 @@ const EmailBoard = () => {
 
     pushMail(data);
   };
-  return (
+  return isAuth ? (
     <div
       className="emailboard"
       style={{
@@ -108,6 +111,8 @@ const EmailBoard = () => {
         </div>
       )}
     </div>
+  ) : (
+    <Redirect to="dashboardLogin" />
   );
 };
 
