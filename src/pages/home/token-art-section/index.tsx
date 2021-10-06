@@ -147,7 +147,7 @@ const TokenArtSection = (props: any) => {
           <div className="title">
             <h4>WHAT ARE WE ALL ABOUT ?</h4>
             <div className="border" />
-            <p>
+            <p style={{ color: "white" }}>
               AFEN is Africa’s leading NFT project, with the aim to
               revolutionize key potential sectors- namely Arts, Real Estate, and
               Education. The AFEN project has gone past preliminary stage to

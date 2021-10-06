@@ -38,7 +38,7 @@ const BannerSection = (props: any) => {
                 Learn more
               </button>
               <Link to="/white-paper" className="whitepaper_ot">
-                <CustomImageLoader src="assets/images/file-text.png" />
+                <img src="assets/images/file-text.png" alt="img" />
                 Whitepaper
               </Link>
             </div>

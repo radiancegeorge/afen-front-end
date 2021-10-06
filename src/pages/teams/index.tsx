@@ -46,7 +46,7 @@ const Team = (props: any) => {
     {
       name: "BUKOLA AKINPELU",
       description: `Bukola is an industry recognized expert in product design, data analysis and blockchain startup marketing. She has over 3 years  of working experinece in various fields in computer science. She combines UI/UX design experience from building blockchain products, website development with product marketing to offer an invaluable mix of service.`,
-      title: "Lead Product Designert",
+      title: "Lead Product Designer",
       image: "/assets/images/user07.png",
       twitter: "https://twitter.com/cryptobea_",
       linkedin: "http://www.linkedin.com/in/oluwabukola-akinpelu-b65b6b174",
