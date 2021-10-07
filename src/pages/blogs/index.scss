@@ -10,6 +10,32 @@
   }
 }
 
+.container__ {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  .back,
+  .front,
+  span {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 2px;
+  }
+  .pages {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media (max-width: 400px) {
   .blogs {
     text-align: center !important;

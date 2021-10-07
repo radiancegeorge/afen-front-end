@@ -7,33 +7,47 @@ import "./index.scss";
 import CustomImageLoader from "../../components/customImageLoader";
 
 const Blogs = (props: any) => {
+  const defaultCount = 5;
   const { postsData, fetchPosts } = useAdminCred();
   useEffect(() => {
     fetchPosts();
   }, []);
   // console.log(postsData.data);
 
-  const defaultData = [
-    {
-      date: "",
-      title: "",
-      description: "",
-      image: "",
-      link: "",
-    },
-  ];
-  const compiledData = postsData.data?.map((data: any, index: number) => {
-    return {
-      ...data,
-      link: data.medium_link,
-      description: data.post,
-      date: moment(data.createdAt).format("lll"),
-    };
-  });
-  console.log(compiledData);
-  const blogs = compiledData;
-  const [page, setPage] = useState(0);
+  const compiledData = postsData.data
+    ?.map((data: any, index: number) => {
+      return {
+        ...data,
+        link: data.medium_link,
+        description: data.post,
+        date: moment(data.createdAt).format("lll"),
+      };
+    })
+    .reverse();
+  const numberToArray = () => {
+    if (compiledData) {
+      const newArray = [];
+      for (
+        let index = 1;
+        index < Math.ceil(compiledData.length / defaultCount + 1);
+        index++
+      ) {
+        newArray.push(index);
+      }
+      return newArray;
+    }
+  };
+  const [page, setPage] = useState(1);
+  const blogs = compiledData?.slice(
+    defaultCount * (page - 1),
+    defaultCount * page
+  );
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
+  // console.log(paginationCount, "count");
+  const more = (item: Number) => {};
   const rightView = (
     ele: any = { image: "", description: "", date: "", title: "" },
     index: number
@@ -110,11 +124,43 @@ const Blogs = (props: any) => {
           })}
           <div className="row">
             <div className="col-md-12">
-              <Pagination
-                totalRecords={1}
-                activePage={1}
+              <div className="container__">
+                <div
+                  className="back"
+                  onClick={(e) => {
+                    if (page > 1) {
+                      setPage(page - 1);
+                    }
+                  }}>
+                  {"<"}
+                </div>
+                <div className="pages">
+                  {numberToArray()?.map((item: any, idx: any) => (
+                    <span
+                      key={idx}
+                      onClick={(e) => setPage(item)}
+                      style={{
+                        ...(item === page && { backgroundColor: "yellow" }),
+                      }}>
+                      {item}
+                    </span>
+                  ))}
+                </div>
+                <div
+                  className="front"
+                  onClick={(e) => {
+                    if (page < compiledData.length / defaultCount) {
+                      setPage(page + 1);
+                    }
+                  }}>
+                  {">"}
+                </div>
+              </div>
+              {/* <Pagination
+                totalRecords={paginationCount || 1}
+                activePage={nextPage}
                 onPageChange={() => {}}
-              />
+              /> */}
             </div>
           </div>
         </div>
