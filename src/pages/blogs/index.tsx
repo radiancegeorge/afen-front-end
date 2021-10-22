@@ -5,6 +5,7 @@ import useAdminCred from "../../hooks/blogPosts";
 import moment from "moment";
 import "./index.scss";
 import CustomImageLoader from "../../components/customImageLoader";
+import parse from "html-react-parser";
 
 const Blogs = (props: any) => {
   const defaultCount = 5;
@@ -63,7 +64,7 @@ const Blogs = (props: any) => {
           <div className="leftblocgcontent">
             <h5>{ele.date}</h5>
             <h3>{ele.title}</h3>
-            <p className="description">{ele.description}</p>
+            <p className="description">{parse(ele.description)}</p>
             <div>
               <a href={ele.link} target="_blank">
                 Read More &gt;&gt;&gt;
@@ -84,7 +85,7 @@ const Blogs = (props: any) => {
           <div className="leftblocgcontent ">
             <h5>{ele.date}</h5>
             <h3> {ele.title}</h3>
-            <p>{ele.description}</p>
+            <p>{parse(ele.description)}</p>
             <div>
               <a href={ele.link} target="_blank">
                 Read More &gt;&gt;&gt;
