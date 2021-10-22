@@ -62,7 +62,7 @@ const PoweredBySection = (props: any) => {
               <Link
                 to="#"
                 onClick={() => {
-                  redirect("https://mexc.com/currencies/exchange/AFEN_USDT");
+                  redirect("https://www.mexc.com/exchange/AFEN_USDT");
                 }}>
                 Mexc
               </Link>

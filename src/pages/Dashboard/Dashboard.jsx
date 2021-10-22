@@ -5,8 +5,12 @@ import useMakeNewPost from "../../hooks/useMakeNewMost";
 import { Redirect } from "react-router";
 import useCheckAuth from "../../hooks/checkAuth";
 
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+
 const Dashboard = () => {
   const { new_post, newPostData } = useMakeNewPost();
+
   const [formData, setFormData] = useState({});
   const cover = useRef(null);
   const { isAuth } = useCheckAuth();
@@ -79,14 +83,16 @@ const Dashboard = () => {
           <label htmlFor="content" id="contentLabel">
             Content
           </label>
-          <textarea
+          <CKEditor
             name="content"
             id="content"
-            cols="30"
-            rows="10"
-            onChange={(e) =>
-              setFormData({ ...formData, post: e.target.value })
-            }></textarea>
+            editor={ClassicEditor}
+            onChange={(event, editor) => {
+              const data = editor.getData();
+              setFormData({ ...formData, post: data });
+              console.log({ event, editor, data });
+            }}
+          />
 
           <input
             type="submit"
