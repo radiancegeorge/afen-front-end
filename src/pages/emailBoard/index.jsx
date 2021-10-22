@@ -6,6 +6,9 @@ import { FaCamera } from "react-icons/fa";
 import useSendBulkMail from "../../hooks/sendMail";
 import useCheckAuth from "../../hooks/checkAuth";
 import { Redirect } from "react-router";
+
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 const EmailBoard = () => {
   const { isAuth } = useCheckAuth();
   const { countData, pushMail, bulkMailData } = useSendBulkMail();
@@ -84,12 +87,16 @@ const EmailBoard = () => {
           </label>
           <label htmlFor="content">
             <span>Content</span>
-            <div
-              className="content"
-              contentEditable={true}
-              onKeyDown={(e) =>
-                setFormData({ ...formData, content: e.target.innerHTML })
-              }></div>
+            <CKEditor
+              name="content"
+              id="content"
+              editor={ClassicEditor}
+              onChange={(event, editor) => {
+                const data = editor.getData();
+                setFormData({ ...formData, content: data });
+                console.log({ event, editor, data });
+              }}
+            />
           </label>
           <button
             className="submitBtn"
