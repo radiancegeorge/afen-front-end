@@ -56,39 +56,38 @@ const TokenArtSection = (props: any) => {
                 responsive={responsive}>
                 <div className="item">
                   <div className="tokan_box">
+                    <h4>NFT MARKETPLACE PAYMENTS</h4>
+                    <p>
+                      When users choose to conduct their transactions using the
+                      AFEN native token on our NFT marketplace, they get a
+                      percentage discount on transaction fees.
+                    </p>
+                    <a
+                      href="https://afenmarketplace.com"
+                      onClick={() => {
+                        // updateContextState("whitepaper", "token");
+                      }}>
+                      Explore{" "}
+                    </a>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="tokan_box">
                     <h4>STAKE AND EARN</h4>
                     <p>
                       By staking AFEN tokens over a period of time, users can
                       earn staking rewards based on interest accrued over time
                       and the duration of their lock-up.
                     </p>
-                    <Link
-                      to="#"
-                      onClick={() => {
-                        updateContextState("whitepaper", "token");
-                      }}>
-                      Read more{" "}
-                    </Link>
+                    <a
+                      href="https://afenmarketplace.com/staking"
+                      onClick={() => {}}>
+                      Stake{" "}
+                    </a>
                   </div>
                 </div>
-                <div className="item">
-                  <div className="tokan_box">
-                    <h4>CASH BACK ON TRANSACTIONS</h4>
-                    <p>
-                      When our users engage in transactions using AFEN tokens
-                      either on our platform or partnering platforms, we
-                      offer....
-                    </p>
-                    <Link
-                      to="#"
-                      onClick={() => {
-                        updateContextState("whitepaper", "token");
-                      }}>
-                      Read more{" "}
-                    </Link>
-                  </div>
-                </div>
-                <div className="item">
+
+                {/* <div className="item">
                   <div className="tokan_box">
                     <h4>ART - NFT MARKETPLACE PAYMENTS</h4>
                     <p>
@@ -103,7 +102,8 @@ const TokenArtSection = (props: any) => {
                       Read more{" "}
                     </Link>
                   </div>
-                </div>
+                </div> */}
+
                 <div className="item">
                   <div className="tokan_box">
                     <h4>EDUCATIONAL INCENTIVES</h4>
@@ -117,8 +117,25 @@ const TokenArtSection = (props: any) => {
                       onClick={() => {
                         updateContextState("whitepaper", "token");
                       }}>
-                      Read more{" "}
+                      Coming soon{" "}
                     </Link>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="tokan_box">
+                    <h4>CASH BACK ON TRANSACTIONS</h4>
+                    <p>
+                      When our users engage in transactions using AFEN tokens
+                      either on our platform or partnering platforms, we
+                      offer....
+                    </p>
+                    <a
+                      href="https://afenmarketplace.com/staking"
+                      onClick={() => {
+                        updateContextState("whitepaper", "token");
+                      }}>
+                      Coming soon{" "}
+                    </a>
                   </div>
                 </div>
                 {/* <div className="item">

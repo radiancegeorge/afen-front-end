@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaFacebook } from "react-icons/fa";
 import { withRouter, Link, useLocation } from "react-router-dom";
 import { ContactUs } from "..";
 import useSubscribe from "../../hooks/subscribeMails";
@@ -293,6 +294,17 @@ const FooterComponent = (props: any) => {
                             target="_blank"
                             rel="noreferrer">
                             <CustomImageLoader src="assets/images/domy_y.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://facebook.com/afencommunity/"
+                            target="__blank">
+                            <FaFacebook
+                              color="orange"
+                              size={18}
+                              style={{ margin: "auto" }}
+                            />
                           </a>
                         </li>
                         {/* <li>

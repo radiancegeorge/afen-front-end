@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaFacebook } from "react-icons/fa";
 import { Link, useHistory } from "react-router-dom";
 import { ContactUs } from "../../../components";
 import CustomImageLoader from "../../../components/customImageLoader";
@@ -89,6 +90,13 @@ const BannerSection = (props: any) => {
                     }}>
                     <CustomImageLoader src="assets/images/mail.png" />
                   </Link>
+                </li>
+                <li>
+                  <a
+                    href="https://facebook.com/afencommunity/"
+                    target="__blank">
+                    <FaFacebook color="white" size={18} />
+                  </a>
                 </li>
               </ul>
             </div>

@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import Modal from "react-bootstrap/Modal";
 import useAxios from "axios-hooks";
 import CustomImageLoader from "../customImageLoader";
+import { FaFacebook } from "react-icons/fa";
 
 const ContactModal = (props: any) => {
   const [show, setShow] = useState(props.show);
@@ -124,6 +125,11 @@ const ContactModal = (props: any) => {
               target="_blank"
               rel="noreferrer">
               <img src="assets/images/cnt_icon/insta_y.png" alt="img" />
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/afencommunity/" target="__blank">
+              <FaFacebook size={20} color="orange" />
             </a>
           </li>
           {/* <li>

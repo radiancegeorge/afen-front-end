@@ -67,6 +67,15 @@ const PoweredBySection = (props: any) => {
                 Mexc
               </Link>
             </li>
+            <li>
+              <Link
+                to="#"
+                onClick={() => {
+                  redirect("https://afenmarketplace.com/staking");
+                }}>
+                Stake
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
