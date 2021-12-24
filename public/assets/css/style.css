@@ -2297,7 +2297,7 @@ ul.teammember li.rightside .usercontent h4 + hr {
   }
 
   .main_logo img {
-    max-width: 80px;
+    max-width: 100px;
   }
 
   .main_header_menu {
@@ -2950,7 +2950,6 @@ ul.teammember li.rightside .usercontent h4 + hr {
     margin-bottom: 20px;
   }
 }
-
 
 .tokan_top_sec .tokan_box {
   background-color: #16222e;

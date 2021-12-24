@@ -179,7 +179,7 @@ const TokenArtSection = (props: any) => {
           <div className="road_heading">
             <h3>OUR ROADMAP</h3>
           </div>
-          <div className="road_map_contant">
+          {/* <div className="road_map_contant">
             <div className="row align-items-center">
               <div className="col-md-3 col-xl-5">
                 <div className="road_cricle">
@@ -246,7 +246,7 @@ const TokenArtSection = (props: any) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="road_map_contant">
             <div className="row align-items-center">
               <div className="col-md-3 col-xl-5">
@@ -261,11 +261,16 @@ const TokenArtSection = (props: any) => {
                 <div className="road_list_box">
                   <ul>
                     <li>AFEN NFT Marketplace Phase 3 Development.</li>
-                    <li>AFEN Educational Platform Development.</li>
-                    <li>Community royalty program announcement.</li>
+                    <li>
+                      AFEN Education 'BloomOne Academy' platform Development
+                    </li>
+                    <li>Exibition Event: NFT Lagos Gallery</li>
                     <li>Real Estate architecture development</li>
-                    <li>AFEN Educational platform launch for Beta test.</li>
-                    <li>AFEN Educational Platform Launch.</li>
+                    <li>
+                      NFT Collections powered by $afen: Coin of Champions
+                      'In-game NFTs'⚽️
+                    </li>
+                    {/* <li>AFEN Educational Platform Launch.</li> */}
                   </ul>
                 </div>
               </div>
@@ -284,9 +289,121 @@ const TokenArtSection = (props: any) => {
               <div className="col-md-9 col-xl-7">
                 <div className="road_list_box">
                   <ul>
-                    <li>Integration of Real estate project (Development)</li>
-                    <li>New product launch</li>
-                    <li>AFEN Charity foundation launch</li>
+                    <li>H1 Opening: Community AMA session</li>
+                    <li>Special NFT Collections Release</li>
+                    <li>Official website update</li>
+                    <li>
+                      BloomOne platform launch
+                      <ul>
+                        <li>Free courses</li>
+                        <li>Learn-to-Earn program</li>
+                        <li>
+                          Introducing Certificate ‘Utility’ NFTs powered by
+                          $afen
+                        </li>
+                      </ul>
+                    </li>
+                    <li>AFEN at Africa Tech Summit, Nairobi</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="road_map_contant">
+            <div className="row align-items-center">
+              <div className="col-md-3 col-xl-5">
+                <div className="road_cricle">
+                  <h4>
+                    Q2 <br />
+                    2022
+                  </h4>
+                </div>
+              </div>
+              <div className="col-md-9 col-xl-7">
+                <div className="road_list_box">
+                  <ul>
+                    <li>NFT Marketplace Revamp (powered by $afen)</li>
+                    <li>BloomOne Internship Cohort: Batch 1</li>
+                    <li>Major token burn / buyback event</li>
+                    <li>
+                      Introducing METACITTI: A decentralized Real Estate NFT
+                      Metaverse. Powered by $afen
+                    </li>
+                    <li>$AFEN Token Listings</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="road_map_contant">
+            <div className="row align-items-center">
+              <div className="col-md-3 col-xl-5">
+                <div className="road_cricle">
+                  <h4>
+                    Q3 <br />
+                    2022
+                  </h4>
+                </div>
+              </div>
+              <div className="col-md-9 col-xl-7">
+                <div className="road_list_box">
+                  <ul>
+                    <li>H2 Opening: Community AMA session</li>
+                    <li>New product development: Phase 1</li>
+                    <li>METACITTI Development</li>
+                    <ul>
+                      <li>Floor plan unveiling</li>
+                      <li>Partnership announcements</li>
+                    </ul>
+                    <li>AFEN NFT Conference</li>
+                    <li>NFT Marketplace Launch</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="road_map_contant">
+            <div className="row align-items-center">
+              <div className="col-md-3 col-xl-5">
+                <div className="road_cricle">
+                  <h4>
+                    Q4 <br />
+                    2022
+                  </h4>
+                </div>
+              </div>
+              <div className="col-md-9 col-xl-7">
+                <div className="road_list_box">
+                  <ul>
+                    <li>BloomOne Internship Cohort: Batch 2</li>
+                    <li>New product development: Phase 2</li>
+                    <li>METACITTI development:</li>
+                    <ul>
+                      <li>Government partnership: Town planning authorities</li>
+                      <li>Introducing Real Estate NFTs</li>
+                      <li>Product integrations</li>
+                    </ul>
+                    <li>More NFT Collections Releases</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="road_map_contant">
+            <div className="row align-items-center">
+              <div className="col-md-3 col-xl-5">
+                <div className="road_cricle">
+                  <h4>
+                    Q1 <br />
+                    2023
+                  </h4>
+                </div>
+              </div>
+              <div className="col-md-9 col-xl-7">
+                <div className="road_list_box">
+                  <ul>
+                    <li>H1 Opening: Community AMA session</li>
+                    <li>METACITTI development: Public offering</li>
                   </ul>
                 </div>
               </div>

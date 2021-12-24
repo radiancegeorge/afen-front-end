@@ -3,7 +3,7 @@ import { withRouter, Link, useLocation } from "react-router-dom";
 import { ContactUs } from "..";
 import { PageContext } from "../../context/afenContext";
 import classNames from "classnames";
-import { link } from "fs";
+
 import CustomImageLoader from "../customImageLoader";
 
 const HeaderComponent = (props: any) => {
@@ -43,7 +43,8 @@ const HeaderComponent = (props: any) => {
                 <nav className="navbar navbar-expand-lg">
                   <Link className="navbar-brand" to="">
                     <div className="main_logo">
-                      <CustomImageLoader src="assets/images/afen_logo.png" />
+                      {/* <CustomImageLoader src="assets/images/afen_logo.png" /> */}
+                      <img src="/favicon_3.png" alt="Logo" />
                     </div>
                   </Link>
                   <button
